@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Merriweather+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');  //font-family: 'Questrial', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap'); //font-family: 'Bree Serif', serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+// Nav Bar
+
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    height: 45px;
+    padding: 5px;
+    position: fixed;    
+
+    .right{
+        float: left;
+        margin: 10px;
+        a{
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .left{
+        float: right;
+        padding: 10px;
+        a{
+            margin: 10px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        
+    }
+}
+
+// Main Page
+
+.container{
+    height: 100vh;
+    // background-color: coral;
+
+    .info{
+        display: grid;
+        height: 80vh;
+        width: 100%;
+        place-items: center;
+
+        .detail{
+            margin-top: 80px;
+            h1 {
+                font-size: 60px;
+                text-decoration: underline;
+                transform: translateY(-400px);
+                animation: 1s slideIn ease-in-out forwards;
+                opacity: 0;
+                text-align: center;
+                color: white;
+                font-family: 'Heebo', sans-serif;
+
+              }
+
+              p{
+                  font-size: 24px;
+                  font-style: normal;
+                  text-align: center;
+                  margin-bottom: 15px;
+                  margin-top: 5px;
+                  animation: 1.5s Updown ease-in-out forwards;
+                  transform: translateY(-300px);
+                  opacity: 0;
+                  color: white;
+                // font-family: 'Merriweather Sans', sans-serif;
+                font-family: 'Bree Serif', serif;
+
+
+              }
+    
+              ul{
+                  list-style-type: none;
+                  text-align: center;
+                  margin: 5px;
+                  li{
+                    display: inline;
+                    margin: 5px;
+                    font-size: 20px;
+                    color: white;
+                    font-family: 'Prompt', sans-serif;
+
+                  }
+                  #web{
+                      animation: 1.8s listdes ease-in-out forwards;
+                      transform: translateY(-300px);
+                      opacity: 0;
+                  }
+                  #divider{
+                    animation: 2.3s divdes ease-in-out forwards;
+                    transform: translateY(-300px);
+                    opacity: 0;
+                  }
+                  #mobile{
+                      animation: 2.1s listdes ease-in-out forwards;
+                      transform: translateY(-300px);
+                      opacity: 0;
+                  }
+              }
+
+              .btn{
+                  display: grid;
+                  place-items: center;
+                    .projects{
+                        margin: 10px;
+                        height: 42px;
+                        width: 120px;
+                        border-radius: 10px;
+                        border: solid transparent;
+                        background-color: #6cd8ce;
+                        color: black;
+                        font-size: 20px;
+                        cursor: pointer;
+                        animation: 2.3s Btnupdown ease-in-out forwards;
+                        opacity: 0;
+                    }
+              }
+              
+              @keyframes slideIn {
+                70%{
+                    opacity: 0;
+                }
+                100% {
+                  transform: translateY(0px);
+                  opacity: 1;
+                  text-decoration: none;
+                }
+              }
+
+              @keyframes Updown {
+                  80%{
+                      opacity: 0;
+                  }
+                  100%{
+                      transform: translateY(0px);
+                      opacity: 1;
+                  }
+              }
+
+              @keyframes listdes {
+                80%{
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100%{
+                    transform: scale(1);
+                    transform: translateY(0px);
+                    opacity: 1;
+                }                  
+              }
+
+              @keyframes divdes {
+                80%{
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100%{
+                    transform: scale(1);
+                    transform: translateY(0px);
+                    opacity: 1;
+                }                  
+              }
+
+              @keyframes Btnupdown {
+                80%{
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100%{
+                    transform: scale(1);
+                    transform: translateY(0px);
+                    opacity: 1;
+                }   
+              }
+        }
+        
+    }
+
+    .downarrow{
+        display: grid;
+        place-items: center;
+       
+        p{
+            color: white;
+            opacity: 0;
+            animation: 2.2s arrow ease-in-out infinite;
+        }
+
+        @keyframes arrow {
+            0%{
+                opacity: 0;
+            }
+            25%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+            75%{
+                opacity: 0;
+            }
+            10%{
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+// skilltoolcontainer
+
+.skilltoolcontainer{
+    background-color: white;
+
+    .skills{
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        #skill{
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        ul{
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-bottom: 50px;
+            padding-top: 25px;
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto ;
+            grid-column-gap: -150px;
+
+            li{
+                text-align: center;
+                padding: 20px;
+                font-size: 20px;
+                font-family: 'Heebo', sans-serif;
+                cursor:auto;
+
+                p{
+                    cursor: context-menu;
+                }
+            }
+
+            // li:hover{
+            //     position: static;
+            //     transform: scale(1.2);
+            // }
+        }
+
+    }
+    .experience{
+        align-items: center;
+
+        p{
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        #experience{
+            display: grid;
+            place-items: center;
+            height: 200px;
+
+            .card{
+                width: 30%;
+                height: 150px;
+                border: 1px solid black;
+                border-radius: 10px;
+
+                .company{
+                    display: grid;
+                    grid-template-columns: auto auto;
+
+                    p{
+                        font-size: 20px;
+                    }
+
+                    #year{
+                        margin-top: 0.3em;
+                        font-size: 15px;
+                        text-align: center;
+                        justify-content: center;
+                        color: gray;
+                    }
+                }
+
+                .details{
+                    p{
+                        font-size: 20px;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+}
+
+.projects{
+    height: 95vh;
+}
+
+@media screen and (max-width: 700px){
+    .skilltoolcontainer{
+        .skills{
+            ul{
+                list-style-type: none;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+        
+                li{
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 20px;
+                    font-family: 'Heebo', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .skilltoolcontainer{
+        .skills{
+            ul{
+                padding: 0;
+                list-style-type: none;
+                display: grid;
+                grid-template-columns: auto auto;
+        
+                li{
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 20px;
+                    font-family: 'Heebo', sans-serif;
+                }
+            }
+        }
+    }
+}
