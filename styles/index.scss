@@ -531,12 +531,13 @@ body{
             grid-template-columns: auto;
             place-items: center;
             padding: 0px;
+        }
+        
 
-            .card1{
+        .card1{
 
-                &:hover{
-                    display: contents;
-                }
+            &:hover{
+                display: contents;
             }
         }
     }

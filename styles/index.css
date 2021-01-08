@@ -641,7 +641,7 @@ body {
     place-items: center;
     padding: 0px;
   }
-  .projects .projectlist .card1:hover {
+  .projects .card1:hover {
     display: contents;
   }
 }
