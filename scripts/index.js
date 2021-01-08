@@ -1,9 +1,8 @@
 
 document.addEventListener("scroll", () => {
-    console.log(window.scrollY ) // for web
+    //console.log(window.scrollY ) // for web
     //console.log(window.scrollY>1850) // for mobile
     var isMobile = window.orientation > -1; 
-    
     if(isMobile){
         if((window.scrollY >= 1850)){
             document.getElementById("navbar").style.backgroundColor = "white"

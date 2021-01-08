@@ -1,9 +1,8 @@
 "use strict";
 
 document.addEventListener("scroll", function () {
-  console.log(window.scrollY); // for web
+  //console.log(window.scrollY ) // for web
   //console.log(window.scrollY>1850) // for mobile
-
   var isMobile = window.orientation > -1;
 
   if (isMobile) {

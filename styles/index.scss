@@ -12,6 +12,7 @@
 
 body{
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 // Nav Bar
@@ -24,6 +25,7 @@ body{
     padding: 5px;
     position: fixed;  
     animation: 1s all ease-in-out forwards;  
+    display: fixed;
 
     .right{
         float: left;
@@ -327,14 +329,144 @@ body{
 }
 
 .projects{
-    height: 95vh;
-
+    height: 90vh;
+    background-color: black;
     p{
         color: white;
         text-align: center;
         font-size: 30px;
         padding: 10px;
         font-family: 'Heebo', sans-serif;
+    }
+
+    .projectlist{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        place-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+
+        .card1{
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px lighten(white, 50%) ;
+
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .info{
+                width: 300px;
+                border-radius: 10px;
+                background-color: white;
+                opacity: 0;
+                p{
+                    font-size: 15px;
+                    color: black;
+                    text-overflow: ellipsis;
+                    white-space: pre;
+                    overflow: hidden;
+                    pointer-events: none;
+
+                   
+                }
+                #title{
+                    padding-left: 10px;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                    color: lighten(black, 50%);
+                }
+
+            }
+            &:hover{
+                box-shadow: 0px 0px;
+                animation: 1s rotate ease-in-out forwards;
+
+                .info{
+                    opacity: 1;
+                    height: 200px;
+                    p{
+                        white-space: unset;
+                        overflow: visible;
+                        text-align: start;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            @keyframes rotate {
+                0%{
+                    transform: rotateY(0deg);
+                }
+                10%{
+                    transform: rotateY(25deg);
+                }
+                30%{
+                    transform: rotateX(25deg);
+                }
+                40%{
+                    transform: rotateX(25deg);
+                    
+                }
+                100%{
+                    transform: rotateZ(2deg);
+                }
+            }
+
+            // &:hover{
+            //     .info{
+            //         p{
+                        
+            //         }
+            //     }
+            // }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .skilltoolcontainer{
+        .skills{
+            ul{
+                list-style-type: none;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                place-items: center;
+        
+                li{
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 20px;
+                    font-family: 'Heebo', sans-serif;
+                }
+            }
+        }
+    }
+
+    .projects{
+        .projectlist{
+            display: grid;
+            grid-template-columns: auto auto;
+            place-items: center;
+            padding: 0px;
+
+            .card1{
+
+                &:hover{
+                    display: contents;
+                }
+            }
+        }
     }
 }
 
@@ -344,13 +476,31 @@ body{
             ul{
                 list-style-type: none;
                 display: grid;
-                grid-template-columns: auto auto auto auto;
+                grid-template-columns: auto auto auto;
+                place-items: center;
+                padding: 0px;
         
                 li{
                     text-align: center;
                     padding: 20px;
                     font-size: 20px;
                     font-family: 'Heebo', sans-serif;
+                }
+            }
+        }
+    }
+
+    .projects{
+        .projectlist{
+            display: grid;
+            grid-template-columns: auto;
+            place-items: center;
+            padding: 0px;
+
+            .card1{
+
+                &:hover{
+                    display: contents;
                 }
             }
         }
@@ -371,6 +521,21 @@ body{
                     padding: 20px;
                     font-size: 20px;
                     font-family: 'Heebo', sans-serif;
+                }
+            }
+        }
+    }
+    .projects{
+        .projectlist{
+            display: grid;
+            grid-template-columns: auto;
+            place-items: center;
+            padding: 0px;
+
+            .card1{
+
+                &:hover{
+                    display: contents;
                 }
             }
         }
