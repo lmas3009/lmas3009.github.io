@@ -19,6 +19,7 @@ body {
   height: 45px;
   padding: 5px;
   position: fixed;
+  animation: 1s all ease-in-out forwards;
 }
 .navbar .right {
   float: left;
@@ -51,6 +52,7 @@ body {
 }
 .container .info .detail {
   margin-top: 80px;
+  pointer-events: none;
 }
 .container .info .detail h1 {
   font-size: 60px;
@@ -271,6 +273,13 @@ body {
 
 .projects {
   height: 95vh;
+}
+.projects p {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  font-family: "Heebo", sans-serif;
 }
 
 @media screen and (max-width: 700px) {
