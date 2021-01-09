@@ -488,9 +488,10 @@ body{
 
         .cards{
             width: 300px;
-            border: 1px solid black;
             border-radius: 10px;
             margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 6px 20px 0 rgba(0, 0, 0, 0.19);
+
             img{
                 width: 100%;
                 height: 200px;
