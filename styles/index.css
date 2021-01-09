@@ -432,7 +432,7 @@ body {
 }
 
 .projects {
-  height: 90vh;
+  height: 100%;
   background-color: black;
 }
 
@@ -561,6 +561,157 @@ body {
   }
 }
 
+.projects .more {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+
+.projects .more a {
+  height: 40px;
+  width: 120px;
+  margin: 10px;
+  background-color: #079fb1;
+  color: white;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  font-family: 'Bree Serif', serif;
+}
+
+.projects .more a span {
+  text-align: center;
+}
+
+.projects .more a:hover {
+  background-color: white;
+  color: black;
+}
+
+.blogs {
+  height: 100%;
+  background-color: white;
+}
+
+.blogs p {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.blogs .blogcard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  place-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.blogs .blogcard .cards {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.blogs .blogcard .cards img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 0px 5px gray;
+          box-shadow: 0px 5px gray;
+}
+
+.blogs .blogcard .cards .title h1 {
+  font-size: 20px;
+  color: gray;
+  text-align: start;
+  padding: 10px;
+}
+
+.blogs .blogcard .cards .info p {
+  height: 100%;
+  font-size: 15px;
+  text-align: start;
+  color: #444141;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.blogs .blogcard .cards .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.blogs .blogcard .cards .view a {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.blogs .blogcard .cards .inte p {
+  font-size: 20px;
+}
+
+.blogs .more {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+
+.blogs .more a {
+  height: 40px;
+  width: 120px;
+  margin: 10px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  font-family: 'Bree Serif', serif;
+}
+
+.blogs .more a span {
+  text-align: center;
+}
+
+.blogs .more a:hover {
+  background-color: black;
+  color: white;
+}
+
 @media screen and (max-width: 1050px) {
   .skilltoolcontainer .skills ul {
     list-style-type: none;
@@ -576,6 +727,9 @@ body {
     font-size: 20px;
     font-family: 'Heebo', sans-serif;
   }
+  .projects {
+    height: 100%;
+  }
   .projects .projectlist {
     display: -ms-grid;
     display: grid;
@@ -586,6 +740,14 @@ body {
   }
   .projects .projectlist .card1:hover {
     display: contents;
+  }
+  .blogs .blogcard {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    place-items: center;
+    padding: 0px;
   }
 }
 
@@ -616,6 +778,14 @@ body {
   .projects .projectlist .card1:hover {
     display: contents;
   }
+  .blogs .blogcard {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    place-items: center;
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -643,6 +813,14 @@ body {
   }
   .projects .card1:hover {
     display: contents;
+  }
+  .blogs .blogcard {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    place-items: center;
+    padding: 0px;
   }
 }
 /*# sourceMappingURL=index.css.map */

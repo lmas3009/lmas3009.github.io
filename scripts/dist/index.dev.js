@@ -1,12 +1,13 @@
 "use strict";
 
 document.addEventListener("scroll", function () {
-  //console.log(window.scrollY ) // for web
+  console.log(window.scrollY); // for web
   //console.log(window.scrollY>1850) // for mobile
+
   var isMobile = window.orientation > -1;
 
   if (isMobile) {
-    if (window.scrollY >= 1850) {
+    if (window.scrollY >= 1850 && window.scrollY <= 3310) {
       document.getElementById("navbar").style.backgroundColor = "white";
       document.getElementById("name").style.color = "black";
       document.getElementById("links1").style.color = "black";
@@ -20,7 +21,7 @@ document.addEventListener("scroll", function () {
       document.getElementById("links3").style.color = "white";
     }
   } else {
-    if (window.scrollY > 1200) {
+    if (window.scrollY > 1200 && window.scrollY < 1800) {
       document.getElementById("navbar").style.backgroundColor = "white";
       document.getElementById("name").style.color = "black";
       document.getElementById("links1").style.color = "black";
