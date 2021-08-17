@@ -15,16 +15,19 @@ body {
   scroll-behavior: smooth;
 }
 
+.home {
+  display: none;
+}
+
 .navbar {
   width: 100%;
   overflow: hidden;
   background-color: black;
   height: 45px;
   padding: 5px;
-  position: fixed;
   -webkit-animation: 1s all ease-in-out forwards;
           animation: 1s all ease-in-out forwards;
-  display: fixed;
+  position: fixed;
 }
 
 .navbar .right {
@@ -77,7 +80,7 @@ body {
   opacity: 0;
   text-align: center;
   color: white;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 .container .info .detail p {
@@ -92,7 +95,7 @@ body {
           transform: translateY(-300px);
   opacity: 0;
   color: white;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
 }
 
 .container .info .detail ul {
@@ -106,7 +109,7 @@ body {
   margin: 5px;
   font-size: 20px;
   color: white;
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
 .container .info .detail ul #web {
@@ -339,8 +342,49 @@ body {
   }
 }
 
+.intro {
+  height: 15vh;
+  width: 58%;
+  margin-top: -150px;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: "Prompt", sans-serif;
+  -webkit-animation: 3s slideIn ease-in-out forwards;
+          animation: 3s slideIn ease-in-out forwards;
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
 .skilltoolcontainer {
   background-color: white;
+  height: 100%;
 }
 
 .skilltoolcontainer .skills img {
@@ -352,32 +396,54 @@ body {
   text-align: center;
   padding: 20px;
   font-size: 30px;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
-.skilltoolcontainer .skills ul {
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-bottom: 50px;
-  padding-top: 25px;
-  list-style-type: none;
+.skilltoolcontainer .skills .programing {
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px #e6e6e6;
+          box-shadow: 0px 0px 10px #e6e6e6;
+  padding: 20px;
+}
+
+.skilltoolcontainer .skills .programing .head {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skilltoolcontainer .skills .programing ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto auto;
-      grid-template-columns: auto auto auto auto auto;
-  grid-column-gap: -150px;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  list-style-type: none;
+  place-items: center;
 }
 
-.skilltoolcontainer .skills ul li {
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-  font-family: 'Heebo', sans-serif;
-  cursor: auto;
+.skilltoolcontainer .skills .programing ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.skilltoolcontainer .skills ul li p {
-  cursor: context-menu;
+.skilltoolcontainer .skills .programing ul li img {
+  width: 25%;
+  height: 25%;
 }
 
 .skilltoolcontainer .experience {
@@ -390,7 +456,7 @@ body {
   text-align: center;
   padding: 20px;
   font-size: 30px;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 .skilltoolcontainer .experience #experience {
@@ -443,7 +509,7 @@ body {
   text-align: center;
   font-size: 30px;
   padding: 10px;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 .projects .projectlist {
@@ -561,7 +627,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
 }
 
 .projects .more a span {
@@ -583,7 +649,7 @@ body {
   text-align: center;
   font-size: 30px;
   padding-top: 10px;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
 
 .blogs .blogcard {
@@ -677,7 +743,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
 }
 
 .blogs .more a span {
@@ -807,7 +873,7 @@ body {
   color: white;
   text-align: center;
   margin-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
@@ -828,7 +894,7 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 20px;
-    font-family: 'Heebo', sans-serif;
+    font-family: "Heebo", sans-serif;
   }
   .projects {
     height: 100%;
@@ -855,20 +921,46 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  .skilltoolcontainer .skills ul {
-    list-style-type: none;
+  .intro {
+    height: 100%;
+  }
+  .skilltoolcontainer .skills .programing {
+    margin: 0px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px #e6e6e6;
+            box-shadow: 0px 0px 10px #e6e6e6;
+    margin: 10px;
+    padding: 10px;
+  }
+  .skilltoolcontainer .skills .programing .head {
+    margin: 10px;
+  }
+  .skilltoolcontainer .skills .programing ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    list-style-type: none;
     place-items: center;
-    padding: 0px;
   }
-  .skilltoolcontainer .skills ul li {
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    font-family: 'Heebo', sans-serif;
+  .skilltoolcontainer .skills .programing ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skilltoolcontainer .skills .programing ul li img {
+    width: 25%;
+    height: 25%;
   }
   .projects .projectlist {
     display: -ms-grid;
@@ -914,7 +1006,7 @@ body {
     text-align: center;
     padding: 20px;
     font-size: 20px;
-    font-family: 'Heebo', sans-serif;
+    font-family: "Heebo", sans-serif;
   }
   .projects .projectlist {
     display: -ms-grid;

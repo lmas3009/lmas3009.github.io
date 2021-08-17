@@ -1,0 +1,264 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+body #namelogo {
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  -webkit-animation: fillanima 1.7s ease-in-out forwards 6.6s;
+          animation: fillanima 1.7s ease-in-out forwards 6.6s;
+}
+
+body #namelogo path:nth-child(1) {
+  stroke-dasharray: 492px;
+  stroke-dashoffset: 492px;
+  -webkit-animation: anima 2s ease-in-out forwards 1s;
+          animation: anima 2s ease-in-out forwards 1s;
+}
+
+body #namelogo path:nth-child(2) {
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  -webkit-animation: anima 2s ease-in-out forwards 1.3s;
+          animation: anima 2s ease-in-out forwards 1.3s;
+}
+
+body #namelogo path:nth-child(3) {
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  -webkit-animation: anima 2s ease-in-out forwards 1.6s;
+          animation: anima 2s ease-in-out forwards 1.6s;
+}
+
+body #namelogo path:nth-child(4) {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  -webkit-animation: anima 2s ease-in-out forwards 1.9s;
+          animation: anima 2s ease-in-out forwards 1.9s;
+}
+
+body #namelogo path:nth-child(5) {
+  stroke-dasharray: 188;
+  stroke-dashoffset: 188;
+  -webkit-animation: anima 2s ease-in-out forwards 2.2s;
+          animation: anima 2s ease-in-out forwards 2.2s;
+}
+
+body #namelogo path:nth-child(6) {
+  stroke-dasharray: 273;
+  stroke-dashoffset: 273;
+  -webkit-animation: anima 2s ease-in-out forwards 2.5s;
+          animation: anima 2s ease-in-out forwards 2.5s;
+}
+
+body #namelogo path:nth-child(7) {
+  stroke-dasharray: 370;
+  stroke-dashoffset: 370;
+  -webkit-animation: anima 2s ease-in-out forwards 2.8s;
+          animation: anima 2s ease-in-out forwards 2.8s;
+}
+
+body #namelogo path:nth-child(8) {
+  stroke-dasharray: 490;
+  stroke-dashoffset: 490;
+  -webkit-animation: anima 2s ease-in-out forwards 3.1s;
+          animation: anima 2s ease-in-out forwards 3.1s;
+}
+
+body #namelogo path:nth-child(9) {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  -webkit-animation: anima 2s ease-in-out forwards 3.4s;
+          animation: anima 2s ease-in-out forwards 3.4s;
+}
+
+body #namelogo path:nth-child(10) {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  -webkit-animation: anima 2s ease-in-out forwards 3.7s;
+          animation: anima 2s ease-in-out forwards 3.7s;
+}
+
+body #namelogo path:nth-child(11) {
+  stroke-dasharray: 315;
+  stroke-dashoffset: 315;
+  -webkit-animation: anima 2s ease-in-out forwards 4s;
+          animation: anima 2s ease-in-out forwards 4s;
+}
+
+body #namelogo path:nth-child(12) {
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  -webkit-animation: anima 2s ease-in-out forwards 4.3s;
+          animation: anima 2s ease-in-out forwards 4.3s;
+}
+
+body #namelogo path:nth-child(13) {
+  stroke-dasharray: 322;
+  stroke-dashoffset: 322;
+  -webkit-animation: anima 2s ease-in-out forwards 4.6s;
+          animation: anima 2s ease-in-out forwards 4.6s;
+}
+
+body #namelogo path:nth-child(14) {
+  stroke-dasharray: 253;
+  stroke-dashoffset: 253;
+  -webkit-animation: anima 2s ease-in-out forwards 4.9s;
+          animation: anima 2s ease-in-out forwards 4.9s;
+}
+
+body #namelogo path:nth-child(15) {
+  stroke-dasharray: 401;
+  stroke-dashoffset: 401;
+  -webkit-animation: anima 2s ease-in-out forwards 5.2s;
+          animation: anima 2s ease-in-out forwards 5.2s;
+}
+
+body #namelogo path:nth-child(16) {
+  stroke-dasharray: 280;
+  stroke-dashoffset: 280;
+  -webkit-animation: anima 2s ease-in-out forwards 5.5s;
+          animation: anima 2s ease-in-out forwards 5.5s;
+}
+
+body #namelogo path:nth-child(17) {
+  stroke-dasharray: 325;
+  stroke-dashoffset: 325;
+  -webkit-animation: anima 2s ease-in-out forwards 5.8s;
+          animation: anima 2s ease-in-out forwards 5.8s;
+}
+
+body #namelogo path:nth-child(18) {
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  -webkit-animation: anima 2s ease-in-out forwards 6.1s;
+          animation: anima 2s ease-in-out forwards 6.1s;
+}
+
+@-webkit-keyframes anima {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes anima {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fillanima {
+  to {
+    fill: white;
+  }
+}
+
+@keyframes fillanima {
+  to {
+    fill: white;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body #namelogo {
+    width: 300px;
+  }
+}
+
+body #namelogo1 {
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+body #namelogo1 path:nth-child(1) {
+  stroke-dasharray: 2232;
+  stroke-dashoffset: 2232;
+  -webkit-animation: anima 4s ease-in-out forwards 1.2s infinite;
+          animation: anima 4s ease-in-out forwards 1.2s infinite;
+}
+
+body #namelogo1 path:nth-child(2) {
+  stroke-dasharray: 1671;
+  stroke-dashoffset: 1671;
+  -webkit-animation: anima 4s ease-in-out forwards 2.5s infinite;
+          animation: anima 4s ease-in-out forwards 2.5s infinite;
+}
+
+body #namelogo1 path:nth-child(3) {
+  stroke-dasharray: 234;
+  stroke-dashoffset: 234;
+  -webkit-animation: anima 4s ease-in-out forwards 3.2s infinite;
+          animation: anima 4s ease-in-out forwards 3.2s infinite;
+}
+
+body #namelogo1 path:nth-child(4) {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  -webkit-animation: anima 4s ease-in-out forwards 3.8s infinite;
+          animation: anima 4s ease-in-out forwards 3.8s infinite;
+}
+
+body #namelogo1 path:nth-child(5) {
+  stroke-dasharray: 205;
+  stroke-dashoffset: 205;
+  -webkit-animation: anima 4s ease-in-out forwards 4.6s infinite;
+          animation: anima 4s ease-in-out forwards 4.6s infinite;
+}
+
+@keyframes anima {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillanima {
+  to {
+    fill: white;
+  }
+}
+
+body .navbar {
+  display: none;
+}
+
+body .container {
+  display: none;
+}
+
+body .skilltoolcontainer {
+  display: none;
+}
+
+body .projects {
+  display: none;
+}
+
+body .blogs {
+  display: none;
+}
+
+body .navbottom {
+  display: none;
+}
+
+body .footer {
+  display: none;
+}
+
+body .intro {
+  display: none;
+}
+/*# sourceMappingURL=landing.css.map */
