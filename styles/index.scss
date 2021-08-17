@@ -303,10 +303,12 @@ body {
           align-items: center;
           justify-content: center;
           flex-direction: column;
+          margin: 10px;
 
           img {
             width: 25%;
             height: 25%;
+            margin-bottom: 5px;
           }
         }
       }

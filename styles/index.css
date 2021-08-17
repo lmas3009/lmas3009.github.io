@@ -439,11 +439,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 10px;
 }
 
 .skilltoolcontainer .skills .programing ul li img {
   width: 25%;
   height: 25%;
+  margin-bottom: 5px;
 }
 
 .skilltoolcontainer .experience {
