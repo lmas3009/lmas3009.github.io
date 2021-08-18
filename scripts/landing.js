@@ -14,4 +14,6 @@ setTimeout(function () {
   document.querySelector(".intro").style.display = "block";
   document.querySelector(".blogs").style.display = "block";
   document.querySelector("#namelogo").style.display = "none";
+  document.querySelector("#namelogo1").style.display = "block";
+  document.querySelector(".experience").style.display = "block";
 }, 8000);

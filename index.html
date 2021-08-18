@@ -156,20 +156,31 @@
     </svg>
 
     <!-- NavBar -->
-    <div id="navbar" class="navbar">
-      <nav class="right">
-        <a id="name" href="#">AKV</a>
-      </nav>
-      <nav class="left">
-        <a id="links1" href="./index.html">Home</a>
-        <a id="links2" href="#">Projects</a>
-        <a
-          id="links3"
-          target="blank"
-          href="https://lmas3009.github.io/resume/Aravind%20Kumar%20Vemula%20Resume.pdf"
-          >Resume</a
-        >
-      </nav>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      "
+    >
+      <div id="navbar" class="navbar">
+        <nav class="right">
+          <a id="name" href="#">AKV</a>
+        </nav>
+        <nav class="left">
+          <a id="links1" href="./index.html">Home</a>
+          <a id="links2" href="https://github.com/lmas3009/" target="_blank"
+            >Projects</a
+          >
+          <a
+            id="links3"
+            target="blank"
+            href="https://lmas3009.github.io/resume/Aravind%20Kumar%20Vemula%20Resume.pdf"
+            >Resume</a
+          >
+        </nav>
+      </div>
     </div>
 
     <!-- Main Page -->
@@ -537,21 +548,65 @@
           </ul>
         </div>
       </div>
-      <!-- <div class="experience">
-            <p>Experience</p>
-            <div id="experience">
-                <div class="card">
-                    <div class="company">
-                        <p>Quanint Techsoft</p>
-                        <p id="year">June 2019 – July 2019</p>
-                    </div>
-                    <div class="details">
-                        <p>Web Developer</p>
-                    </div>
-                </div>
+    </div>
+
+    <!-- Experience -->
+
+    <div class="experience">
+      <p>Experience</p>
+      <div id="experience">
+        <div class="card">
+          <img src="./images/intern/tidbeat.png" />
+          <div class="info">
+            <div class="info_1">
+              <div
+                style="
+                  display: flex;
+                  align-items: flex-start;
+                  flex-direction: column;
+                "
+              >
+                <p class="role">Associate Software trainee</p>
+                <p class="company">Tidbeat</p>
+              </div>
+              <div>
+                <p class="date">May 2021 - July 2021</p>
+                <p class="loc">Hyderabad, Telangana</p>
+              </div>
             </div>
-            <br>
-        </div> -->
+            <p class="desc">
+              I worked on a mobile application which is built on react native
+              using typescript. I learnt more about redux, reduxtoolkit,
+              typescript. I also worked on paymentIntegration with Razorpay.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/intern/quanint.jfif" />
+          <div class="info">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%"
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: flex-start;
+                  flex-direction: column;
+                "
+              >
+                <p class="role">Web Developer</p>
+                <p class="company">Quanint</p>
+              </div>
+              <div>
+                <p class="date">May 2019 - June 2019</p>
+                <p class="loc">Hyderabad, Telangana</p>
+              </div>
+            </div>
+            <p class="desc">I worked as a web developer.</p>
+          </div>
+        </div>
+      </div>
+      <br />
     </div>
 
     <!-- Projects -->
@@ -560,92 +615,207 @@
       <p>Projects</p>
 
       <div class="projectlist">
-        <div
-          id="card1"
-          class="card1"
-          style="
-            background-image: url('https://miro.medium.com/max/2400/1*Gf__G9AZitAT-dbz4zKfXg.png');
-          "
-        >
-          <div class="info">
-            <h1 id="title">Integrate Alan.app with flutter</h1>
-            <p>
-              Making a simple voice chat integration using flutter and Alan.app
-              to navigate to other pages.
-            </p>
+        <div id="card1" class="card1">
+          <div>
+            <div class="stack">
+              <svg
+                aria-hidden="true"
+                class="octicon repo-svg"
+                height="16"
+                role="img"
+                viewBox="0 0 12 16"
+                width="12"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                ></path>
+              </svg>
+              <h1 id="title">Integrate Alan.app with flutter</h1>
+            </div>
+            <div class="info">
+              <p>
+                Making a simple voice chat integration using flutter and
+                Alan.app to navigate to other pages.
+              </p>
+            </div>
+          </div>
+          <div class="footer1">
+            <a
+              href="https://github.com/lmas3009/Alan.app-with-flutter"
+              target="_blank"
+              ><img
+                src="https://img.shields.io/badge/code-github-blue?logoWidth=30&labelColor=black"
+                alt="Github"
+            /></a>
           </div>
         </div>
-        <!-- <div class="card1" style='background-image: url("https://user-images.githubusercontent.com/60876387/89039988-9d717100-d360-11ea-8abd-d293a73e8ec1.PNG");'>
-                <div class="info">
-                    <h1 id="title">Bonsai App</h1>
-                    <p>Making a simple voice chat integration using flutter and Alan.app to navigate to other pages.</p>
-                </div>
-            </div> -->
-        <div
-          class="card1"
-          style="
-            background-image: url('https://user-images.githubusercontent.com/60876387/89122881-adb45800-d4e8-11ea-800c-d5d91236a04f.PNG');
-          "
-        >
-          <div class="info">
-            <h1 id="title">A News Application</h1>
-            <p>
-              This is used to find all the news around the world and displays
-              here.
-            </p>
+        <div class="card1">
+          <div>
+            <div class="stack">
+              <svg
+                aria-hidden="true"
+                class="octicon repo-svg"
+                height="16"
+                role="img"
+                viewBox="0 0 12 16"
+                width="12"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                ></path>
+              </svg>
+              <h1 id="title">A News Application</h1>
+            </div>
+            <div class="info">
+              <p>
+                This is used to find all the news around the world and displays
+                here.
+              </p>
+            </div>
+          </div>
+          <div class="footer1">
+            <a
+              href="https://github.com/lmas3009/A-News-Application"
+              target="_blank"
+              ><img
+                src="https://img.shields.io/badge/code-github-blue?logoWidth=30&labelColor=black"
+                alt="Github"
+            /></a>
           </div>
         </div>
-        <div
-          class="card1"
-          style="
-            background-image: url('https://user-images.githubusercontent.com/60876387/90306905-3ff82b00-deef-11ea-89f0-df9e3207c228.PNG');
-          "
-        >
-          <div class="info">
-            <h1 id="title">Calculator App</h1>
-            <p>A simple calulator app built using React Native</p>
+        <div class="card1">
+          <div>
+            <div class="stack">
+              <svg
+                aria-hidden="true"
+                class="octicon repo-svg"
+                height="16"
+                role="img"
+                viewBox="0 0 12 16"
+                width="12"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                ></path>
+              </svg>
+              <h1 id="title">Calculator App</h1>
+            </div>
+            <div class="info">
+              <p>A simple calulator app built using React Native</p>
+            </div>
+          </div>
+          <div class="footer1">
+            <a href="https://github.com/lmas3009/Calculator" target="_blank"
+              ><img
+                src="https://img.shields.io/badge/code-github-blue?logoWidth=30&labelColor=black"
+                alt="Github"
+            /></a>
           </div>
         </div>
-        <div
-          class="card1"
-          style="
-            background-image: url('https://user-images.githubusercontent.com/60876387/112317177-cd93c880-8cd1-11eb-9823-867b66de9490.png');
-          "
-        >
-          <div class="info">
-            <h1 id="title">Polling-Web-Application</h1>
-            <p>
-              Where you can share your poll to your friends/students to
-              poll/answer it. This application done using Flask with backend
-              using Mysql.
-            </p>
+        <div class="card1">
+          <div>
+            <div class="stack">
+              <svg
+                aria-hidden="true"
+                class="octicon repo-svg"
+                height="16"
+                role="img"
+                viewBox="0 0 12 16"
+                width="12"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                ></path>
+              </svg>
+              <h1 id="title">Polling-Web-Application</h1>
+            </div>
+            <div class="info">
+              <p>
+                Where you can share your poll to your friends/students to
+                poll/answer it. This application done using Flask with backend
+                using Mysql.
+              </p>
+            </div>
+          </div>
+          <div class="footer1">
+            <a
+              href="https://github.com/lmas3009/Polling_Web_App"
+              target="_blank"
+              ><img
+                src="https://img.shields.io/badge/code-github-blue?logoWidth=30&labelColor=black"
+                alt="Github"
+            /></a>
           </div>
         </div>
-        <div
-          class="card1"
-          style="
-            background-image: url('https://user-images.githubusercontent.com/60876387/108303797-9f9bff80-71cc-11eb-85b1-220dacb8a3cc.png');
-          "
-        >
-          <div class="info">
-            <h1 id="title">Flask-CRUD-Operation</h1>
-            <p>
-              Student Database System (Project) with all the CRUD Operations
-            </p>
+        <div class="card1">
+          <div>
+            <div class="stack">
+              <svg
+                aria-hidden="true"
+                class="octicon repo-svg"
+                height="16"
+                role="img"
+                viewBox="0 0 12 16"
+                width="12"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                ></path>
+              </svg>
+              <h1 id="title">Flask-CRUD-Operation</h1>
+            </div>
+            <div class="info">
+              <p>
+                Student Database System (Project) with all the CRUD Operations
+              </p>
+            </div>
+          </div>
+          <div class="footer1">
+            <a
+              href="https://github.com/lmas3009/Flask-CRUD-Operation"
+              target="_blank"
+              ><img
+                src="https://img.shields.io/badge/code-github-blue?logoWidth=30&labelColor=black"
+                alt="Github"
+            /></a>
           </div>
         </div>
-        <div
-          class="card1"
-          style="
-            background-image: url('https://user-images.githubusercontent.com/60876387/102886950-11312900-447c-11eb-8700-7f7c9e6c78a0.png');
-          "
-        >
-          <div class="info">
-            <h1 id="title">DailyNews</h1>
-            <p>
-              This is used to find all the news around the world and displays
-              here. Made using React js
-            </p>
+        <div class="card1">
+          <div>
+            <div class="stack">
+              <svg
+                aria-hidden="true"
+                class="octicon repo-svg"
+                height="16"
+                role="img"
+                viewBox="0 0 12 16"
+                width="12"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                ></path>
+              </svg>
+              <h1 id="title">DailyNews</h1>
+            </div>
+            <div class="info">
+              <p>
+                This is used to find all the news around the world and displays
+                here. Made using React js
+              </p>
+            </div>
+          </div>
+          <div class="footer1">
+            <a href="https://github.com/lmas3009/DailyNews" target="_blank"
+              ><img
+                src="https://img.shields.io/badge/code-github-blue?logoWidth=30&labelColor=black"
+                alt="Github"
+            /></a>
           </div>
         </div>
         <!-- <div class="card1" style='background-image: url("https://user-images.githubusercontent.com/60876387/88457837-37d83d00-cea7-11ea-959d-509ce913533c.PNG");'>
@@ -676,7 +846,9 @@
       </div>
 
       <div class="more">
-        <a href="#projects"><span>View More</span></a>
+        <a href="https://github.com/lmas3009/" target="_blank"
+          ><span>View More</span></a
+        >
       </div>
     </div>
 
@@ -781,9 +953,12 @@
           <p>30lmas09@gmail.com</p>
         </div>
         <div class="posts">
+          <h2>Explore</h2>
           <ul>
             <a href="#"><li>Home</li></a>
-            <a href=""><li>Projects</li></a>
+            <a href="https://github.com/lmas3009/" target="_blank"
+              ><li>Projects</li></a
+            >
             <a href="https://aravind3009.medium.com/" target="_blank"
               ><li>Blogs</li></a
             >
@@ -816,14 +991,15 @@
         </div>
         <div class="contactform">
           <h2>Contact Form</h2>
-          <form>
+          <form id="contactform">
             <label for="">Email:</label><br />
-            <input type="email" placeholder="Email Id:" /><br />
+            <input type="email" placeholder="Email Id:" name="email" required /><br />
             <label for="">Feedback:</label><br />
             <textarea
               id="subject"
               name="subject"
               placeholder="Feedback.."
+              required
             ></textarea
             ><br />
             <input class="submit" type="submit" value="Submit" />
@@ -833,7 +1009,16 @@
     </div>
 
     <div class="footer">
-      <p>Made with ❤ by Aravind Kumar Vemula</p>
+      <div class="githubstats">
+        <img
+          src="https://img.shields.io/badge/code-github-blue?logoWidth=30&labelColor=black&style=for-the-badge&logo=github"
+          alt="Github"
+        />
+        <p class="repo">Repositories: <span id="repocount">0</span></p>
+        <p class="gists">Gists: <span id="gistcount">0</span></p>
+        <p class="follow">Followers: <span id="followcount">0</span></p>
+      </div>
+      <p>Made with 🧡 by Aravind Kumar Vemula</p>
     </div>
     <!-- Scripting files link -->
     <script src="./scripts/index.js"></script>

@@ -36,3 +36,33 @@
 //         }
 //     }
 // })
+
+const api_url = "https://api.github.com/users/lmas3009";
+
+async function getapi(url) {
+  // Storing response
+  const response = await fetch(url);
+
+  // Storing data in form of JSON
+  var data = await response.json();
+  document.getElementById("followcount").innerHTML = data["followers"];
+  document.getElementById("repocount").innerHTML = data["public_repos"];
+  document.getElementById("gistcount").innerHTML = data["public_gists"];
+}
+// Calling that async function
+getapi(api_url);
+
+const contactform = document.getElementById("contactform");
+
+contactform.addEventListener("submit", (event) => {
+  // stop form submission
+  event.preventDefault();
+  console.log(contactform["email"].value);
+  console.log(contactform["subject"].value);
+  window.open(
+    "mailto:aravindkumae66@gmail.com?subject=Response from the portfolio&body=" +
+      contactform["subject"].value +
+      ", from the mailId " +
+      contactform["email"].value
+  );
+});
