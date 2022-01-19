@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.PNG" type="image/x-icon" />
+    <meta name="description" content="Aravind Kumar Vemula Projects" />
+    <title>Projects | Aravind Kumar</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div class="w-full flex bg-black">
+      <div
+        id="navbar"
+        class="w-full flex justify-between flex-col lg:flex-row md:flex-row text-white"
+      >
+        <nav class="header">
+          <a id="name" href="#">AKV</a>
+        </nav>
+        <nav
+          id="header"
+          class="header flex flex-col hidden md:flex lg:flex md:flex-row lg:flex-row"
+        >
+          <a id="links1" href="./index.html">Home</a>
+          <a id="links1" href="./Projects.html">Projects</a>
+          <a id="links1" href="./Blogs.html">Blogs</a>
+          <a
+            id="links3"
+            target="blank"
+            href="./resume/Resume Aravind Kumar Vemula.pdf"
+            >Resume</a
+          >
+        </nav>
+      </div>
+
+      <div
+        class="flex lg:hidden mg:hidden"
+        onclick="OnclickOpenMenu()"
+        id="open-menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-white m-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-white m-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- End navbar -->
+
+    <svg
+      id="namelogo1"
+      class="flex w-full items-center relative"
+      width="258"
+      height="258"
+      viewBox="0 0 258 258"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M129.189 5.40625L127.404 3.65542L125.653 5.43997L5.40625 128.002L3.65542 129.787L5.43996 131.538L128.002 251.785L129.787 253.535L131.538 251.751L251.785 129.189L253.535 127.404L251.751 125.653L129.189 5.40625ZM127.512 15.001L242.19 127.512L129.679 242.19L15.001 129.679L127.512 15.001Z"
+        stroke="gray"
+        stroke-width="5"
+      />
+      <path
+        d="M130.023 38.0595L128.967 36.9937L127.901 38.0492L36.8503 128.217L35.7845 129.272L36.84 130.338L127.008 221.389L128.063 222.455L129.129 221.4L220.18 131.232L221.246 130.176L220.19 129.111L130.023 38.0595ZM128.934 43.8013L214.438 130.143L128.096 215.647L42.5921 129.306L128.934 43.8013Z"
+        stroke="red"
+        stroke-width="3"
+      />
+    </svg>
+
+    <!-- Main Page -->
+    <div class="container1">
+      <div class="info">
+        <div class="detail">
+          <h1>Aravind Kumar Vemula</h1>
+          <ul>
+            <li id="web">Mobile</li>
+            <li id="divider">|</li>
+            <li id="mobile">Frontend</li>
+            <li id="divider">|</li>
+            <li id="mobile">Backend</li>
+            <li id="mobile">Developer</li>
+            <br />
+            <li id="mobile">UI/UX Designer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End MainPage -->
+
+    <div class="Blogs w-full flex justify-center">
+      <p class="text-white text-2xl pt-10 text-center">
+        Projects of Aravind Kumar Vemula 👋
+      </p>
+    </div>
+
+    <div class="flex flex-col-reverse lg:flex-row-reverse mt-20">
+      <div
+        class="p-0 mr-0 lg:p-20 lg:mr-20 flex flex-col items-center justify-center lg:items-start"
+      >
+        <h2 class="text-4xl mb-5 text-white">CleanDocs</h2>
+        <p class="m-5 w-80 text-white text-center lg:text-left">
+          A documentation template built using HTML, Tailwindcss, and Javascript
+        </p>
+        <p
+          class="ml-5 w-80 text-white text-center flex flex-col items-center md:items-start lg:items-start lg:text-left mb-10"
+        >
+          Github:
+          <a
+            href="https://github.com/lmas3009/cleandocs-template"
+            target="_blank"
+            class="flex"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+              class="bg-white border"
+          /></a>
+          Live:
+          <a
+            href="https://cleandocs-template.netlify.app"
+            class="underline"
+            target="_blank"
+            ><img
+              src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="live"
+              class="bg-white border"
+          /></a>
+        </p>
+      </div>
+      <div class="ml-auto imganim flex justify-center">
+        <img src="./images/mockups/cleandocs.png" class="object-cover w-5/6" />
+      </div>
+    </div>
+
+    <div class="flex flex-col-reverse lg:flex-row mt-25">
+      <div
+        class="p-0 mr-0 lg:p-20 lg:mr-20 flex flex-col items-center justify-center lg:items-start"
+      >
+        <h2 class="text-4xl mb-5 text-white">Furne-store</h2>
+        <p class="m-5 w-80 text-white text-center lg:text-left">
+          A online STH (shop to home) delivery store
+        </p>
+        <p
+          class="ml-5 w-80 text-white text-center flex flex-col items-center md:items-start lg:items-start lg:text-left mb-10"
+        >
+          Github:
+          <a
+            href="https://github.com/lmas3009/furne-store"
+            target="_blank"
+            class="underline"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+              class="bg-white border"
+          /></a>
+          Live:
+          <a
+            href="https://furne-store.netlify.app/"
+            class="underline"
+            target="_blank"
+            ><img
+              src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="live"
+              class="bg-white border"
+          /></a>
+        </p>
+      </div>
+      <div class="ml-auto imganim flex justify-center">
+        <img src="./images/mockups/furnestore.png" class="object-cover w-5/6" />
+      </div>
+    </div>
+
+    <section>
+      <div
+        class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4 place-items-center"
+      >
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/shadowui.PNG);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">shadow_ui_bottom_navbar</p>
+          <a
+            href="https://github.com/lmas3009/shadow_ui_bottom_navbar"
+            target="_blank"
+            class="mt-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <a
+            href="https://pub.dev/packages/shadow_ui_bottom_navbar"
+            class="mt-3 mb-3"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="live"
+          /></a>
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/pollingweb.PNG);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;web&gt;
+            </p>
+          </div>
+          <p class="text-black">Polling_Web_App</p>
+          <a
+            href="https://github.com/lmas3009/Polling_Web_App"
+            target="_blank"
+            class="mt-3 mb-0"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <a
+            href="https://pollingwebapp.herokuapp.com/"
+            class="mt-3 mb-3"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="live"
+          /></a>
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/attendace.png);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;web&gt;
+            </p>
+          </div>
+          <p class="text-black">Attendance-Management-System</p>
+          <a
+            href="https://github.com/lmas3009/Attendance-Management-System"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/noimg.jpg);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;web&gt;
+            </p>
+          </div>
+          <p class="text-black">Pdf-generator</p>
+          <a
+            href="https://github.com/lmas3009/Pdf-generator"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/alan.PNG);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Alan.app-with-flutter</p>
+          <a
+            href="https://github.com/lmas3009/Alan.app-with-flutter"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/dailynews.png);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;web&gt;
+            </p>
+          </div>
+          <p class="text-black">DailyNews</p>
+          <a
+            href="https://github.com/lmas3009/DailyNews"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/music.PNG);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Muisc Application</p>
+          <a
+            href="https://github.com/lmas3009/Muisc"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/noimg.jpg);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Gender-Recognition</p>
+          <a
+            href="https://github.com/lmas3009/Gender-Recognition"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/personalapp.png);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Your-Personal-Application</p>
+          <a
+            href="https://github.com/lmas3009/Your-Personal-Application"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/calculator.png);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Calculator</p>
+          <a
+            href="https://github.com/lmas3009/Calculator"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/news.png);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">News-Application</p>
+          <a
+            href="https://github.com/lmas3009/A-News-Application"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/netflix.png);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Netflix Clone</p>
+          <a
+            href="https://github.com/lmas3009/Netflix_Clone"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/youtube.png);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Youtube Clone</p>
+          <a
+            href="https://github.com/lmas3009/Youtube_Clone"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/noimg.jpg);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;web&gt;
+            </p>
+          </div>
+          <p class="text-black">Blood Donation Web App</p>
+          <a
+            href="https://github.com/lmas3009/BloodDonation"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <!-- <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/yoga.PNG);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Yoga App</p>
+          <a
+            href="https://github.com/lmas3009/YogaApp"
+            target="_blank"
+            class="mt-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+          <img
+            class="mt-3 mb-3"
+            src="https://img.shields.io/badge/code-youtube-red?logo=youtube&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          />
+        </div>
+        <div class="h-80 w-80 bg-gray-200 flex flex-col items-center rounded">
+          <div
+            class="h-44 w-72 m-3 rounded"
+            style="
+              background-image: url(./images/projects/covid19.PNG);
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              filter: blur(0.5px);
+            "
+          ></div>
+          <div class="h-44 w-72 m-3 flex items-center justify-center absolute">
+            <p
+              class="pl-3 pr-3 pt-2 pb-2 bg-white rounded text-center font-black"
+            >
+              &lt;mobile&gt;
+            </p>
+          </div>
+          <p class="text-black">Covid-19 Android application</p>
+          <a
+            href="https://github.com/lmas3009/Covid-19"
+            target="_blank"
+            class="mt-3 mb-3"
+            ><img
+              src="https://img.shields.io/badge/code-github-grey?logo=github&logoWidth=30&labelColor=black&style=for-the-badge"
+              alt="Github"
+          /></a>
+          <!-- <br />
+          <img
+            src="https://img.shields.io/badge/code-live-red?logo=live&logoWidth=30&labelColor=black&style=for-the-badge"
+            alt="live"
+          /> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom nav -->
+    <div class="h-full text-xl p-10 w-full flex justify-center">
+      <div class="w-full flex flex-col justify-center">
+        <div class="w-full flex justify-center">
+          <ul
+            class="grid place-items-center grid-row-1 md:grid-cols-4 lg:grid-cols-4 gap-5 text-white"
+          >
+            <a href="/"><li>Home</li></a>
+            <a href="./Projects.html"><li>Projects</li></a>
+            <a href="./Blogs.html"><li>Blogs</li></a>
+            <a
+              target="blank"
+              href="https://lmas3009.github.io/resume/Aravind%20Kumar%20Vemula%20Resume.pdf"
+              ><li>Resume</li></a
+            >
+          </ul>
+        </div>
+
+        <div class="social flex justify-center gap-4 mt-5">
+          <a target="blank" href="https://github.com/lmas3009"
+            ><i class="fa fa-github text-white" aria-hidden="true"></i
+          ></a>
+          <a
+            target="blank"
+            href="https://www.linkedin.com/in/aravind-kumar-vemula-53bb80194/"
+            ><i class="fa fa-linkedin text-white" aria-hidden="true"></i
+          ></a>
+          <a target="blank" href="https://twitter.com/AravindKumarV09"
+            ><i class="fa fa-twitter-square text-white" aria-hidden="true"></i
+          ></a>
+          <a target="blank" href="https://aravindkumarvemula.medium.com/"
+            ><i class="fa fa-medium text-white" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer1">
+      <div class="githubstats flex flex-col md:flex-row lg:flex-row">
+        <img
+          src="https://img.shields.io/badge/code-github-blue?logoWidth=30&labelColor=black&style=for-the-badge&logo=github"
+          alt="Github"
+        />
+        <p class="repo">Repositories: <span id="repocount">0</span></p>
+        <p class="gists">Gists: <span id="gistcount">0</span></p>
+        <p class="follow">Followers: <span id="followcount">0</span></p>
+      </div>
+      <p>Made with 🧡 by Aravind Kumar Vemula</p>
+    </div>
+    <!-- Scripting files link -->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts//landing.js"></script>
+  </body>
+</html>

@@ -124,10 +124,58 @@ body {
   }
 
   #namelogo1 {
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // animation: fillanima 2.5s ease-in-out forwards 2.5s;
+
+    path:nth-child(1) {
+      stroke-dasharray: 2232;
+      stroke-dashoffset: 2232;
+      animation: anima 4s ease-in-out forwards 1.2s infinite;
+    }
+    path:nth-child(2) {
+      stroke-dasharray: 1671;
+      stroke-dashoffset: 1671;
+      animation: anima 4s ease-in-out forwards 2.5s infinite;
+    }
+
+    path:nth-child(3) {
+      stroke-dasharray: 234;
+      stroke-dashoffset: 234;
+      animation: anima 4s ease-in-out forwards 3.2s infinite;
+    }
+
+    path:nth-child(4) {
+      stroke-dasharray: 240;
+      stroke-dashoffset: 240;
+      animation: anima 4s ease-in-out forwards 3.8s infinite;
+    }
+
+    path:nth-child(5) {
+      stroke-dasharray: 205;
+      stroke-dashoffset: 205;
+      animation: anima 4s ease-in-out forwards 4.6s infinite;
+    }
+
+    @keyframes anima {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fillanima {
+      to {
+        fill: white;
+      }
+    }
+  }
+
+  #namelogo_1 {
+    display: none;
+    align-items: center;
+    justify-content: center;
     // animation: fillanima 2.5s ease-in-out forwards 2.5s;
 
     path:nth-child(1) {
@@ -180,15 +228,15 @@ body {
     display: none;
   }
 
-  .skilltoolcontainer {
+  .skills {
     display: none;
   }
 
-  .projects {
+  .about-me {
     display: none;
   }
 
-  .blogs {
+  .experience {
     display: none;
   }
 
@@ -201,10 +249,6 @@ body {
   }
 
   .intro {
-    display: none;
-  }
-
-  .experience {
     display: none;
   }
 }

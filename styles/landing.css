@@ -176,11 +176,16 @@ body #namelogo path:nth-child(18) {
 }
 
 body #namelogo1 {
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body #namelogo1 path:nth-child(1) {
@@ -230,6 +235,63 @@ body #namelogo1 path:nth-child(5) {
   }
 }
 
+body #namelogo_1 {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #namelogo_1 path:nth-child(1) {
+  stroke-dasharray: 2232;
+  stroke-dashoffset: 2232;
+  -webkit-animation: anima 4s ease-in-out forwards 1.2s infinite;
+          animation: anima 4s ease-in-out forwards 1.2s infinite;
+}
+
+body #namelogo_1 path:nth-child(2) {
+  stroke-dasharray: 1671;
+  stroke-dashoffset: 1671;
+  -webkit-animation: anima 4s ease-in-out forwards 2.5s infinite;
+          animation: anima 4s ease-in-out forwards 2.5s infinite;
+}
+
+body #namelogo_1 path:nth-child(3) {
+  stroke-dasharray: 234;
+  stroke-dashoffset: 234;
+  -webkit-animation: anima 4s ease-in-out forwards 3.2s infinite;
+          animation: anima 4s ease-in-out forwards 3.2s infinite;
+}
+
+body #namelogo_1 path:nth-child(4) {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  -webkit-animation: anima 4s ease-in-out forwards 3.8s infinite;
+          animation: anima 4s ease-in-out forwards 3.8s infinite;
+}
+
+body #namelogo_1 path:nth-child(5) {
+  stroke-dasharray: 205;
+  stroke-dashoffset: 205;
+  -webkit-animation: anima 4s ease-in-out forwards 4.6s infinite;
+          animation: anima 4s ease-in-out forwards 4.6s infinite;
+}
+
+@keyframes anima {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillanima {
+  to {
+    fill: white;
+  }
+}
+
 body .navbar {
   display: none;
 }
@@ -238,15 +300,15 @@ body .container {
   display: none;
 }
 
-body .skilltoolcontainer {
+body .skills {
   display: none;
 }
 
-body .projects {
+body .about-me {
   display: none;
 }
 
-body .blogs {
+body .experience {
   display: none;
 }
 
@@ -259,10 +321,6 @@ body .footer {
 }
 
 body .intro {
-  display: none;
-}
-
-body .experience {
   display: none;
 }
 /*# sourceMappingURL=landing.css.map */

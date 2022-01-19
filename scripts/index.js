@@ -37,6 +37,18 @@
 //     }
 // })
 
+function OnclickOpenMenu() {
+  document.getElementById("header").style.display = "flex";
+  document.getElementById("close-menu").style.display = "block";
+  document.getElementById("open-menu").style.display = "none";
+}
+
+function OnclickCloseMenu() {
+  document.getElementById("header").style.display = "none";
+  document.getElementById("close-menu").style.display = "none";
+  document.getElementById("open-menu").style.display = "block";
+}
+
 const api_url = "https://api.github.com/users/lmas3009";
 
 async function getapi(url) {

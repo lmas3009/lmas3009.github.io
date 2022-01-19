@@ -5,15 +5,14 @@ for (let i = 0; i < logo.length; i++) {
 }
 
 setTimeout(function () {
-  document.querySelector(".navbar").style.display = "block";
+  document.querySelector(".navbar").style.display = "flex";
   document.querySelector(".container").style.display = "block";
-  document.querySelector(".skilltoolcontainer").style.display = "block";
-  document.querySelector(".projects").style.display = "block";
-  document.querySelector(".navbottom").style.display = "block";
-  document.querySelector(".footer").style.display = "block";
-  document.querySelector(".intro").style.display = "block";
-  document.querySelector(".blogs").style.display = "block";
-  document.querySelector("#namelogo").style.display = "none";
-  document.querySelector("#namelogo1").style.display = "block";
+  document.querySelector(".about-me").style.display = "block";
+  document.querySelector(".skills").style.display = "block";
   document.querySelector(".experience").style.display = "block";
+  document.querySelector(".navbottom").style.display = "block";
+  document.querySelector(".footer").style.display = "flex";
+  document.querySelector("#namelogo").style.display = "none";
+  document.querySelector("#namelogo1").style.display = "none";
+  document.querySelector("#namelogo_1").style.display = "flex";
 }, 8000);
